@@ -10,8 +10,11 @@
                   [ring/ring-jetty-adapter "1.6.3"]
 
                   ;; Database
+                  [toucan "1.1.9"]
+                  [org.postgresql/postgresql "42.2.4"]
 
-                 ]
+                  ;; Hashing
+                  [buddy/buddy-hashers "1.3.0"]]
   :main ^:skip-aot resultful-crud.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all
